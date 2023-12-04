@@ -21,7 +21,10 @@
       ></button>
     </div>
 
-    <nav :class="{ [$style.menu]: true, [$style.active]: isActive }">
+    <nav
+      :class="{ [$style.menu]: true, [$style.active]: isActive }"
+      @click="toggleNav"
+    >
       <div :class="$style.container" class="container">
         <ul :class="$style.list">
           <li>

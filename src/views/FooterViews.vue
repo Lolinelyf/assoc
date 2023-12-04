@@ -5,18 +5,22 @@
         <p :class="$style.navigation__title">Ассоциация выпускников СКФУ</p>
         <ul :class="$style.navigation__list">
           <li :class="$style.navigation__link">
-            <a href="about.html">О нас</a>
+            <RouterLink to="/about">О нас</RouterLink>
           </li>
           <li :class="$style.navigation__link">
-            <a href="projects.html">Проекты</a>
+            <RouterLink to="/projects">Проекты</RouterLink>
           </li>
           <li :class="$style.navigation__link">
-            <a href="career.html">Центр развития карьеры</a>
+            <RouterLink to="/career">Центр карьеры</RouterLink>
           </li>
-          <li :class="$style.navigation__link"><a href="">Выпускникам</a></li>
-          <li :class="$style.navigation__link"><a href="">Партнёры</a></li>
           <li :class="$style.navigation__link">
-            <a href="contacts.html">Контакты</a>
+            <RouterLink to="/graduates">Выпускникам</RouterLink>
+          </li>
+          <li :class="$style.navigation__link">
+            <RouterLink to="/partners">Партнёры</RouterLink>
+          </li>
+          <li :class="$style.navigation__link">
+            <RouterLink to="/contacts">Контакты</RouterLink>
           </li>
         </ul>
       </div>
@@ -156,7 +160,7 @@
     &__link {
       margin: 0;
       list-style: none;
-      padding: 0 0 0.5rem 0;
+      padding: 0 0 0.25rem 0;
       color: #2e3036;
       font-size: 1rem;
       font-weight: 500;
