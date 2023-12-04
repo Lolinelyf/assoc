@@ -8,8 +8,8 @@
 <template>
   <HeaderViews />
   <NavigationViews />
-  <main :class="$style.main">
-    <RouterView />
+  <main :class="$style.main" class="bg">
+    <RouterView class="bg" />
   </main>
 
   <FooterViews />

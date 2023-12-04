@@ -64,8 +64,11 @@
   .footer {
     width: 100%;
     background-color: #171c2d;
-    padding: 2rem;
+    padding: 0.5rem;
     color: #d1d1d3;
+    @media (min-width: $mobile-size-land) {
+      padding: 2rem;
+    }
   }
   .contacts {
     display: flex;
@@ -94,7 +97,11 @@
     &__title {
       color: #fff;
       margin-bottom: 1rem;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+
+      @media (min-width: $mobile-size-land) {
+        font-size: 1.4rem;
+      }
 
       @media (min-width: $tablet-size-port) {
         font-size: 1.6rem;
@@ -104,16 +111,20 @@
     &__item {
       color: #d1d1d3;
       margin-bottom: 0.5rem;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 400;
+      @media (min-width: $mobile-size-land) {
+        font-size: 1rem;
+      }
 
       & > a {
         display: inline-block;
         color: #fff;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: 0.9rem;
 
         @media (min-width: $tablet-size-land) {
+          font-size: 1rem;
           transition: 0.25s;
           width: max-content;
 
@@ -136,10 +147,13 @@
       0 2px 4px #64798a0a,
       0 4px 5px #07205212,
       0 1px 10px #64798a14;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 20px;
     margin-bottom: 2rem;
     max-width: 550px;
+    @media (min-width: $mobile-size-land) {
+      padding: 2rem;
+    }
 
     @media (min-width: $desktop-size-average) {
       margin: 0;
@@ -148,8 +162,11 @@
 
     &__title {
       color: #2e3036;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
+      @media (min-width: $mobile-size-land) {
+        font-size: 1.4rem;
+      }
     }
 
     &__list {
@@ -160,17 +177,23 @@
     &__link {
       margin: 0;
       list-style: none;
-      padding: 0 0 0.25rem 0;
+      padding: 0;
       color: #2e3036;
       font-size: 1rem;
       font-weight: 500;
 
+      &:not(:last-child) {
+        padding-bottom: 0.25rem;
+      }
+
       & > a {
         display: block;
         color: #2e3036;
+        font-size: 0.9rem;
 
         @media (min-width: $tablet-size-land) {
           transition: 0.25s;
+          font-size: 1rem;
           &:hover {
             color: #669cff;
             transform: translateX(-4px);

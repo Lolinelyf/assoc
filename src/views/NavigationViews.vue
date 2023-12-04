@@ -74,8 +74,11 @@
     height: 50px;
     background-color: #fff;
     box-shadow: 0 3px 6px #0000000f;
-    padding: 10px 15px;
+    padding: 10px 8px;
     z-index: 999;
+    @media (min-width: $mobile-size-land) {
+      padding: 10px 16px;
+    }
 
     @media (min-width: $tablet-size-port) {
       display: none;
