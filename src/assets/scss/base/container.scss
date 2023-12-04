@@ -1,0 +1,13 @@
+@import 'variables.scss';
+.container {
+  width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  @media (min-width: $mobile-size-land) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
