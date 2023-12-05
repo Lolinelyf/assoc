@@ -100,7 +100,7 @@
         }
 
         & > ul {
-          margin-top: 1.6rem;
+          margin-top: 1rem;
           font-weight: 500;
           font-size: 0.9rem;
           color: #2e3036;
@@ -109,6 +109,7 @@
           @media (min-width: $tablet-size-port) {
             font-size: 1.2rem;
             padding-inline-start: 2rem;
+            margin-top: 2rem;
           }
 
           & > li {

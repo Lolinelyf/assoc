@@ -120,18 +120,15 @@
       font-size: 0.9rem;
       color: #2e3036;
       list-style: disc;
-      padding-inline-start: 1.5rem;
       margin-bottom: 1rem;
       @media (min-width: $tablet-size-port) {
         font-size: 1rem;
-        padding-inline-start: 2rem;
-
-        & > li {
-          &:not(:last-child) {
-            margin-bottom: 0.5rem;
-          }
-          padding-inline-start: 1rem;
+      }
+      & > li {
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
         }
+        padding-inline-start: 1rem;
       }
     }
   }
