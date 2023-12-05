@@ -24,7 +24,7 @@
 <style lang="scss" module>
   @import '@/assets/scss/base/variables.scss';
   .projects {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     @media (min-width: $tablet-size-port) {
       margin-bottom: 4rem;
     }
@@ -36,10 +36,11 @@
 
   .item {
     flex: 0 0 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     @media (min-width: $tablet-size-port) {
       flex: 0 0 calc((100% - 2rem) / 2);
+      margin-bottom: 2rem;
 
       &:not(:nth-child(2n)) {
         margin-right: 2rem;

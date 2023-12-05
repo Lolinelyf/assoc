@@ -25,11 +25,11 @@
     flex-flow: column wrap;
     justify-content: space-between;
     border-radius: 6px;
-    padding: 2rem;
-    height: 270px;
+    padding: 1rem;
+    height: 200px;
     background:
       linear-gradient(0deg, #00000021 10%, #ffffff00, #ffffff00 35% 100%),
-      top 6rem right -1rem/14rem no-repeat url('/images/icons/background-logo.svg'),
+      top 4rem right -1rem/11rem no-repeat url('/images/icons/background-logo.svg'),
       linear-gradient(135deg, #0000004d 10%, #ffffff00 90%),
       linear-gradient(0deg, #083266, #003dae);
     box-shadow:
@@ -38,6 +38,7 @@
       0 1px 10px #64798a14;
 
     @media (min-width: $tablet-size-port) {
+      padding: 2rem;
       height: 270px;
       background:
         linear-gradient(0deg, #00000021 10%, #ffffff00, #ffffff00 35% 100%),

@@ -78,11 +78,11 @@
       0 1px 10px #64798a14;
     margin-bottom: 2rem;
     background-color: #fff;
-    @media (min-width: $mobile-size-land) {
+    @media (min-width: $tablet-size-port) {
       padding: 2rem;
     }
 
-    @media (min-width: $tablet-size-land) {
+    @media (min-width: $tablet-size-port) {
       &:not(:last-child) {
         margin-right: 2rem;
       }
@@ -91,10 +91,11 @@
   .header {
     display: flex;
     flex-flow: row-reverse nowrap;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
-    @media (min-width: $mobile-size-land) {
+    @media (min-width: $tablet-size-port) {
       flex-flow: row nowrap;
+      margin-bottom: 2rem;
     }
   }
 
@@ -111,7 +112,7 @@
       0 4px 5px #64798a0a,
       0 1px 10px #64798a14;
 
-    @media (min-width: $mobile-size-land) {
+    @media (min-width: $tablet-size-port) {
       flex: 0 0 140px;
       height: 140px;
       margin-bottom: 0;
@@ -123,7 +124,7 @@
   .info {
     flex: 0 0 calc(100% - 1rem - 100px);
 
-    @media (min-width: $mobile-size-land) {
+    @media (min-width: $tablet-size-port) {
       flex: 0 0 calc(100% - 2rem - 140px);
     }
   }
@@ -132,7 +133,7 @@
     color: $blue-color;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    @media (min-width: $mobile-size-land) {
+    @media (min-width: $tablet-size-port) {
       font-size: 1.6rem;
       margin-bottom: 1rem;
     }
@@ -140,8 +141,8 @@
 
   .position {
     color: #808185;
-    font-size: 0.9rem;
-    @media (min-width: $mobile-size-land) {
+    font-size: 0.8rem;
+    @media (min-width: $tablet-size-port) {
       font-size: 1rem;
     }
   }
@@ -151,7 +152,7 @@
     color: #2e3036;
     font-size: 0.9rem;
 
-    @media (min-width: $mobile-size-land) {
+    @media (min-width: $tablet-size-port) {
       font-size: 1rem;
     }
 
@@ -159,7 +160,10 @@
       display: flex;
       flex-wrap: wrap;
       &:not(:last-child) {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        @media (min-width: $tablet-size-port) {
+          margin-bottom: 1rem;
+        }
       }
       & > a {
         display: flex;

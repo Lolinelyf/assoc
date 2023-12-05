@@ -37,6 +37,15 @@
       0 2px 4px #64798a0a,
       0 4px 5px #64798a0a,
       0 1px 10px #64798a14;
+
+    @media (min-width: $tablet-size-port) {
+      &:hover .img {
+        filter: brightness(0.7);
+      }
+      &:active .img {
+        filter: brightness(0.9);
+      }
+    }
     &::after {
       content: url(/images/icons/info.svg);
       position: absolute;
@@ -53,10 +62,8 @@
     color: #fff;
     z-index: 1;
     text-transform: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1.6rem;
-    font-size: 1.4rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.596));
   }
 
@@ -70,7 +77,7 @@
     overflow: hidden;
     border-radius: 6px;
     object-fit: cover;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
     transition: filter 0.25s;
   }
 </style>

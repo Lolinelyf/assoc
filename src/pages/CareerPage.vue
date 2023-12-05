@@ -104,6 +104,7 @@
           font-weight: 500;
           font-size: 0.9rem;
           color: #2e3036;
+          list-style: disc;
           padding-inline-start: 1.5rem;
           @media (min-width: $tablet-size-port) {
             font-size: 1.2rem;
@@ -111,10 +112,6 @@
           }
 
           & > li {
-            &::marker {
-              content: '~  ';
-              color: #2e3036;
-            }
             &:not(:last-child) {
               margin-bottom: 1rem;
             }

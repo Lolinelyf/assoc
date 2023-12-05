@@ -9,7 +9,7 @@
   <HeaderViews />
   <NavigationViews />
   <main :class="$style.main" class="bg">
-    <RouterView class="bg" />
+    <RouterView />
   </main>
 
   <FooterViews />
