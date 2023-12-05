@@ -79,7 +79,10 @@
 
   .list {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    @media (min-width: $tablet-size-port) {
+      margin-bottom: 2rem;
+    }
     & > ul {
       margin: 0;
       padding: 0;
@@ -102,10 +105,10 @@
         & > ul {
           margin-top: 1rem;
           font-weight: 500;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           color: #2e3036;
           list-style: disc;
-          padding-inline-start: 1.5rem;
+          padding-inline-start: 1rem;
           @media (min-width: $tablet-size-port) {
             font-size: 1.2rem;
             padding-inline-start: 2rem;
@@ -114,7 +117,10 @@
 
           & > li {
             &:not(:last-child) {
-              margin-bottom: 1rem;
+              margin-bottom: 0.5rem;
+              @media (min-width: $tablet-size-port) {
+                margin-bottom: 1rem;
+              }
             }
           }
         }
@@ -175,15 +181,17 @@
 
   .title {
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-transform: none;
     color: $blue-color;
+    @media (min-width: $tablet-size-port) {
+      font-size: 1.6rem;
+    }
   }
 
   .flex {
     display: flex;
     flex-flow: column wrap;
-    margin-top: 2rem;
 
     @media (min-width: $tablet-size-port) {
       flex-flow: row nowrap;

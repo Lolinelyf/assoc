@@ -124,11 +124,11 @@
       @media (min-width: $tablet-size-port) {
         font-size: 1rem;
       }
+      padding-inline-start: 1rem;
       & > li {
         &:not(:last-child) {
           margin-bottom: 0.5rem;
         }
-        padding-inline-start: 1rem;
       }
     }
   }
@@ -188,10 +188,11 @@
     & > a {
       color: #2e3036;
       opacity: 0.6;
-      font-size: 1rem;
+      font-size: 0.9rem;
 
       @media (min-width: $tablet-size-land) {
-        transition: 0.25s;
+        transition: 0.15s;
+        font-size: 1rem;
 
         &:hover {
           color: #669cff;
@@ -202,9 +203,9 @@
   }
 
   .banners {
-    padding: 2rem 0 0;
+    margin: 2rem 0 1rem 0;
     @media (min-width: $tablet-size-port) {
-      padding: 4rem 0 2rem 0;
+      margin: 4rem 0 2rem 0;
     }
     &__flex {
       display: flex;

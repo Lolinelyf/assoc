@@ -12,9 +12,10 @@
 <template>
   <div :class="$style.navigation">
     <div :class="$style.bar">
-      <a href="/" :class="$style.logo">
-        <img src="/images/icons/logo.svg" :class="$style.img" alt="" />
-      </a>
+      <RouterLink :class="$style.logo" to="/"
+        ><img src="/images/icons/logo.svg" :class="$style.img" alt=""
+      /></RouterLink>
+
       <button
         :class="{ [$style.button]: true, [$style.active]: isActive }"
         @click="toggleNav"
@@ -143,7 +144,7 @@
     transition: 0.25s;
     z-index: 99;
     box-shadow: 0px 3px 10px #0000000a;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 
     @media (min-width: $tablet-size-port) {
       box-shadow:
@@ -156,7 +157,7 @@
       background-color: rgba(255, 255, 255, 0);
       top: 0;
       width: 100%;
-      font-size: 1em;
+      font-size: 1rem;
       height: 60px;
       font-weight: 500;
       z-index: 0;
@@ -214,14 +215,14 @@
   .item {
     display: inline-block;
     color: #2e3036;
-    font-size: 1.4em;
+    font-size: 1rem;
     padding-bottom: 6px;
     width: 100%;
 
     @media (min-width: $tablet-size-port) {
       transition: 0.15s;
       width: auto;
-      font-size: 1em;
+      font-size: 1.2rem;
       padding-bottom: 0;
 
       &:hover {

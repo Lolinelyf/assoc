@@ -76,9 +76,10 @@
       0 2px 4px #64798a0a,
       0 4px 5px #64798a0a,
       0 1px 10px #64798a14;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #fff;
     @media (min-width: $tablet-size-port) {
+      margin-bottom: 2rem;
       padding: 2rem;
     }
 

@@ -35,7 +35,7 @@
   .flex {
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 
     @media (min-width: $tablet-size-land) {
       flex-flow: row nowrap;

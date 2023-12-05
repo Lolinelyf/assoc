@@ -40,12 +40,13 @@
       0 2px 4px #64798a0a,
       0 4px 5px #64798a0a,
       0 1px 10px #64798a14;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background: linear-gradient(135deg, #0000004d 10%, #ffffff00 90%),
       linear-gradient(0deg, #083266, #003dae);
 
     @media (min-width: $tablet-size-port) {
       padding: 2rem;
+      margin-bottom: 2rem;
       &:not(:last-child) {
         margin-right: 2rem;
       }

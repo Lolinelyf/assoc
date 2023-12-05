@@ -41,16 +41,17 @@
       0 4px 5px #64798a0a,
       0 1px 10px #64798a14;
     background-color: #fff;
-    margin-bottom: 2rem;
-    background: linear-gradient(157deg, #f7fcfb 20%, #b0d4ff 100%),
+    margin-bottom: 1rem;
+    background: linear-gradient(197deg, #f1f4ff 20%, #b0d4ff42 100%),
       linear-gradient(
-        155deg,
+        140deg,
         rgba(255, 255, 255, 0.168627451) 35%,
-        #afc6ff 100%
+        #afc6ff61 100%
       );
 
     @media (min-width: $tablet-size-port) {
       padding: 2rem;
+      margin-bottom: 2rem;
     }
   }
   .img {
