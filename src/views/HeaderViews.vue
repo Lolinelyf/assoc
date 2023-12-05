@@ -5,7 +5,7 @@
   <header :class="$style.header">
     <div class="container">
       <RouterLink :class="$style.logo" to="/"
-        ><img src="@/assets/icons/logo.svg" alt="logo" :class="$style.img" />
+        ><img src="/images/icons/logo.svg" alt="logo" :class="$style.img" />
         <h1 :class="$style.title" class="title">
           <span class="b">Ассоциация выпускников</span> Северо-Кавказского
           федерального университета

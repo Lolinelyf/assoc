@@ -4,10 +4,10 @@
       <h2 :class="$style.title" class="title">Социальные сети</h2>
       <div :class="$style.container">
         <a href="https://t.me/WorkNCFU" :class="$style.link"
-          ><img src="@/assets/icons/tg-c.png" alt="tg" :class="$style.img"
+          ><img src="/images/icons/tg-c.png" alt="tg" :class="$style.img"
         /></a>
         <a href="https://vk.com/careercentr_ncfu" :class="$style.link"
-          ><img src="@/assets/icons/vk-c.png" alt="vk" :class="$style.img"
+          ><img src="/images/icons/vk-c.png" alt="vk" :class="$style.img"
         /></a>
       </div>
     </div>
@@ -29,7 +29,7 @@
     height: 270px;
     background:
       linear-gradient(0deg, #00000021 10%, #ffffff00, #ffffff00 35% 100%),
-      top 6rem right -1rem/14rem no-repeat url('../assets/icons/background-logo.svg'),
+      top 6rem right -1rem/14rem no-repeat url('/images/icons/background-logo.svg'),
       linear-gradient(135deg, #0000004d 10%, #ffffff00 90%),
       linear-gradient(0deg, #083266, #003dae);
     box-shadow:
@@ -42,7 +42,7 @@
       background:
         linear-gradient(0deg, #00000021 10%, #ffffff00, #ffffff00 35% 100%),
         top 2rem right 2rem/19rem no-repeat
-          url('../assets/icons/background-logo.svg'),
+          url('/images/icons/background-logo.svg'),
         linear-gradient(135deg, #0000004d 10%, #ffffff00 90%),
         linear-gradient(0deg, #083266, #003dae);
     }

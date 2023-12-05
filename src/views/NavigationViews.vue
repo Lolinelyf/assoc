@@ -13,7 +13,7 @@
   <div :class="$style.navigation">
     <div :class="$style.bar">
       <a href="/" :class="$style.logo">
-        <img src="@/assets/icons/logo.svg" :class="$style.img" alt="" />
+        <img src="/images/icons/logo.svg" :class="$style.img" alt="" />
       </a>
       <button
         :class="{ [$style.button]: true, [$style.active]: isActive }"
@@ -74,7 +74,7 @@
     height: 50px;
     background-color: #fff;
     box-shadow: 0 3px 6px #0000000f;
-    padding: 10px 8px;
+    padding: 10px 0.75rem;
     z-index: 999;
     @media (min-width: $mobile-size-land) {
       padding: 10px 16px;

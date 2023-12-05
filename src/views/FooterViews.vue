@@ -64,7 +64,7 @@
   .footer {
     width: 100%;
     background-color: #171c2d;
-    padding: 0.5rem;
+    padding: 0.75rem;
     color: #d1d1d3;
     @media (min-width: $mobile-size-land) {
       padding: 2rem;

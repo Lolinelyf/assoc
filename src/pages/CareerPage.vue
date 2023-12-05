@@ -1,6 +1,7 @@
 <script setup>
   import BreadcrumbsViewsVue from '@/views/BreadcrumbsViews.vue';
   import BannerSmall from '@/components/BannerSmall.vue';
+  import { getBannerItems } from '@/api/CareerBannerSmall.js';
 </script>
 <template>
   <BreadcrumbsViewsVue :path="['Центр карьеры']" />
@@ -33,25 +34,19 @@
         <div :class="$style.flex">
           <BannerSmall
             :class="$style.item"
-            title="Поиск работы"
-            action="Подать"
-            img="src/assets/icons/career.png"
-            link="https://forms.yandex.ru/u/6512815ec09c025f6a7b3430/"
-          />
-          <BannerSmall
-            :class="$style.item"
-            title="Поиск сотрудника"
-            action="Подать"
-            img="src/assets/icons/career.png"
-            link="https://forms.yandex.ru/u/65128018eb61464fd1f00773/"
+            v-for="item in getBannerItems()"
+            :title="item.title"
+            :action="item.action"
+            :img="item.img"
+            :link="item.link"
           />
         </div>
         <div :class="$style.links">
           <a href="https://vk.com/careercentr_ncfu" :class="$style.link"
-            ><img src="@/assets/icons/vk-c.png" alt="" :class="$style.img"
+            ><img src="/images/icons/vk-c.png" alt="" :class="$style.img"
           /></a>
           <a href="https://t.me/WorkNCFU" :class="$style.link"
-            ><img src="@/assets/icons/tg-c.png" alt="" :class="$style.img"
+            ><img src="/images/icons/tg-c.png" alt="" :class="$style.img"
           /></a>
         </div>
       </div>
@@ -63,16 +58,23 @@
   @import '@/assets/scss/base/variables.scss';
   .job {
     font-size: 1.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    @media (min-width: $tablet-size-port) {
+      margin-bottom: 4rem;
+    }
   }
   .container {
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 6px;
     box-shadow:
       0 2px 4px #64798a0a,
       0 4px 5px #64798a0a,
       0 1px 10px #64798a14;
     background-color: #fff;
+
+    @media (min-width: $tablet-size-port) {
+      padding: 2rem;
+    }
   }
 
   .list {
@@ -88,8 +90,11 @@
         padding-left: 0;
         list-style: none;
         font-weight: 600;
-        font-size: 1.6rem;
+        font-size: 1rem;
         color: $blue-color;
+        @media (min-width: $tablet-size-port) {
+          font-size: 1.6rem;
+        }
         &:not(:last-child) {
           margin-bottom: 2rem;
         }
@@ -97,9 +102,13 @@
         & > ul {
           margin-top: 1.6rem;
           font-weight: 500;
-          font-size: 1.2rem;
+          font-size: 0.9rem;
           color: #2e3036;
-          padding-inline-start: 2rem;
+          padding-inline-start: 1.5rem;
+          @media (min-width: $tablet-size-port) {
+            font-size: 1.2rem;
+            padding-inline-start: 2rem;
+          }
 
           & > li {
             &::marker {

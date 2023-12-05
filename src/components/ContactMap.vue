@@ -10,7 +10,7 @@
       {},
       {
         iconLayout: 'default#image',
-        iconImageHref: '../src/assets/icons/logo-ymap.svg',
+        iconImageHref: '/images/icons/logo-ymap.svg',
         iconImageSize: [55, 55],
         iconImageOffset: [-30, -46],
       },
@@ -40,10 +40,11 @@
       0 2px 4px #64798a56,
       0 4px 5px #64798a0a,
       0 1px 10px #64798a31;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 
     @media (min-width: $tablet-size-land) {
       height: 500px;
+      margin-bottom: 4rem;
     }
   }
   .item {

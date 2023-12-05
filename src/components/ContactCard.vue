@@ -29,11 +29,15 @@
       required: true,
     },
   });
+  function alt(el) {
+    return el.split('/').pop().split('.').shift();
+  }
 </script>
+
 <template>
   <div :class="$style.card">
     <div :class="$style.header">
-      <img src="@/assets/images/nophoto.png" alt="" :class="$style.img" />
+      <img :src="props.image" :alt="alt(props.image)" :class="$style.img" />
       <div :class="$style.info">
         <p :class="$style.name">{{ props.name }}</p>
         <p :class="$style.position">

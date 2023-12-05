@@ -35,13 +35,18 @@
   .flex {
     display: flex;
     flex-flow: column wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 
     @media (min-width: $tablet-size-land) {
       flex-flow: row nowrap;
+      margin-bottom: 2rem;
     }
   }
   .banner {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    @media (min-width: $tablet-size-land) {
+      flex-flow: row nowrap;
+      margin-bottom: 4rem;
+    }
   }
 </style>

@@ -34,7 +34,7 @@
     flex-flow: column wrap;
     justify-content: space-between;
     height: 270px;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 6px;
     box-shadow:
       0 2px 4px #64798a0a,
@@ -45,6 +45,7 @@
       linear-gradient(0deg, #083266, #003dae);
 
     @media (min-width: $tablet-size-port) {
+      padding: 2rem;
       &:not(:last-child) {
         margin-right: 2rem;
       }
@@ -53,25 +54,29 @@
   .title {
     color: #fff;
     text-transform: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
 
     @media (min-width: $tablet-size-port) {
       font-size: 2rem;
+      margin-bottom: 0;
     }
   }
 
   .background {
     position: absolute;
     display: block;
-    bottom: 2rem;
-    right: 2rem;
-    width: 70px;
-    height: 70px;
     object-fit: contain;
+    width: 56px;
+    height: 56px;
+    bottom: 1rem;
+    right: 1rem;
 
     @media (min-width: $tablet-size-land) {
       width: 120px;
       height: 120px;
+      bottom: 2rem;
+      right: 2rem;
     }
   }
 </style>

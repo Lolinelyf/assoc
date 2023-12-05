@@ -4,10 +4,12 @@
   text-transform: uppercase;
   font-size: 1.4rem;
   color: $blue-color;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
 
   @media (min-width: $tablet-size-port) {
     font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 
   @media (min-width: $tablet-size-land) {
