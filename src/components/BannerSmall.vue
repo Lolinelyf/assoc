@@ -33,7 +33,7 @@
     position: relative;
     flex-flow: column wrap;
     justify-content: space-between;
-    height: 270px;
+    height: 244px;
     padding: 1rem;
     border-radius: 6px;
     box-shadow:
@@ -46,7 +46,7 @@
 
     @media (min-width: $tablet-size-port) {
       padding: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0;
       &:not(:last-child) {
         margin-right: 2rem;
       }
@@ -74,8 +74,8 @@
     right: 1rem;
 
     @media (min-width: $tablet-size-land) {
-      width: 120px;
-      height: 120px;
+      width: 96px;
+      height: 96px;
       bottom: 2rem;
       right: 2rem;
     }

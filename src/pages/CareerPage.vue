@@ -11,21 +11,18 @@
     <section :class="$style.job">
       <div :class="$style.container">
         <div :class="$style.list">
+          <h3 :class="$style.list__title">
+            Центр развития карьеры помогает найти:
+          </h3>
           <ul>
+            <li>Вакансии от ведущих компаний</li>
+            <li>Выпускников, готовых стать вашими сотрудниками</li>
             <li>
-              Центр развития карьеры помогает найти:
-              <ul>
-                <li>Вакансии от ведущих компаний</li>
-                <li>Выпускников, готовых стать вашими сотрудниками</li>
-                <li>
-                  Возможность подбора кандидатов на узкопрофильные специальности
-                </li>
-                <li>Новые возможности для повышения вашей квалификации</li>
-                <li>
-                  Единомышленников для уже существующего или нового проекта,
-                  бизнеса
-                </li>
-              </ul>
+              Возможность подбора кандидатов на узкопрофильные специальности
+            </li>
+            <li>Новые возможности для повышения вашей квалификации</li>
+            <li>
+              Единомышленников для уже существующего или нового проекта, бизнеса
             </li>
           </ul>
         </div>
@@ -41,14 +38,6 @@
             :link="item.link"
           />
         </div>
-        <div :class="$style.links">
-          <a href="https://vk.com/careercentr_ncfu" :class="$style.link"
-            ><img src="/images/icons/vk-c.png" alt="" :class="$style.img"
-          /></a>
-          <a href="https://t.me/WorkNCFU" :class="$style.link"
-            ><img src="/images/icons/tg-c.png" alt="" :class="$style.img"
-          /></a>
-        </div>
       </div>
     </section>
   </div>
@@ -57,12 +46,12 @@
 <style lang="scss" module>
   @import '@/assets/scss/base/variables.scss';
   .job {
-    font-size: 1.2rem;
     margin-bottom: 2rem;
     @media (min-width: $tablet-size-port) {
       margin-bottom: 4rem;
     }
   }
+
   .container {
     padding: 1rem;
     border-radius: 6px;
@@ -83,57 +72,15 @@
     @media (min-width: $tablet-size-port) {
       margin-bottom: 2rem;
     }
-    & > ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
 
-      & > li {
-        margin: 0;
-        padding-left: 0;
-        list-style: none;
-        font-weight: 600;
-        font-size: 1rem;
-        color: $blue-color;
-        @media (min-width: $tablet-size-port) {
-          font-size: 1.6rem;
-        }
-        &:not(:last-child) {
-          margin-bottom: 2rem;
-        }
-
-        & > ul {
-          margin-top: 1rem;
-          font-weight: 500;
-          font-size: 0.8rem;
-          color: #2e3036;
-          list-style: disc;
-          padding-inline-start: 1rem;
-          @media (min-width: $tablet-size-port) {
-            font-size: 1.2rem;
-            padding-inline-start: 2rem;
-            margin-top: 2rem;
-          }
-
-          & > li {
-            &:not(:last-child) {
-              margin-bottom: 0.5rem;
-              @media (min-width: $tablet-size-port) {
-                margin-bottom: 1rem;
-              }
-            }
-          }
-        }
+    &__title {
+      font-size: 1rem;
+      color: #2e3036;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      @media (min-width: $tablet-size-port) {
+        font-size: 1.4rem;
       }
-    }
-  }
-
-  .links {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    @media (min-width: $tablet-size-port) {
-      justify-content: flex-end;
     }
   }
 
@@ -149,34 +96,6 @@
         color: #2a3447;
       }
     }
-  }
-
-  .link {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 30px;
-
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
-
-    @media (min-width: $tablet-size-port) {
-      margin-top: 0;
-      transition: 0.25s;
-      height: 40px;
-
-      &:hover {
-        filter: contrast(135%);
-      }
-    }
-  }
-
-  .img {
-    display: block;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 0 2px #314b833a);
   }
 
   .title {

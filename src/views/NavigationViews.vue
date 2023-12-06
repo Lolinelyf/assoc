@@ -201,6 +201,7 @@
     & > li {
       list-style-type: none;
       width: 100%;
+      margin: 0;
 
       @media (min-width: $tablet-size-port) {
         width: auto;

@@ -30,6 +30,7 @@
     font-size: 0.8rem;
     text-decoration: none;
     color: #2e3036;
+    margin-bottom: 0;
   }
 
   .item {
@@ -38,6 +39,7 @@
     align-items: center;
     font-size: 0.8rem;
     color: #2e3036;
+    margin-bottom: 0 !important;
 
     &::after {
       display: block;

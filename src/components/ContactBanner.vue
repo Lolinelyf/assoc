@@ -26,10 +26,10 @@
     justify-content: space-between;
     border-radius: 6px;
     padding: 1rem;
-    height: 200px;
+    height: 164px;
     background:
       linear-gradient(0deg, #00000021 10%, #ffffff00, #ffffff00 35% 100%),
-      top 4rem right -1rem/11rem no-repeat url('/images/icons/background-logo.svg'),
+      top 3rem right -1rem/10rem no-repeat url('/images/icons/background-logo.svg'),
       linear-gradient(135deg, #0000004d 10%, #ffffff00 90%),
       linear-gradient(0deg, #083266, #003dae);
     box-shadow:
@@ -42,8 +42,7 @@
       height: 270px;
       background:
         linear-gradient(0deg, #00000021 10%, #ffffff00, #ffffff00 35% 100%),
-        top 2rem right 2rem/19rem no-repeat
-          url('/images/icons/background-logo.svg'),
+        top 1rem right -2rem/21rem no-repeat url('/images/icons/background-logo.svg'),
         linear-gradient(135deg, #0000004d 10%, #ffffff00 90%),
         linear-gradient(0deg, #083266, #003dae);
     }
@@ -89,8 +88,11 @@
 
   .img {
     display: block;
-    height: 100%;
+    height: 80%;
     object-fit: contain;
     filter: grayscale(100%) contrast(200%);
+    @media (min-width: $tablet-size-port) {
+      height: 100%;
+    }
   }
 </style>

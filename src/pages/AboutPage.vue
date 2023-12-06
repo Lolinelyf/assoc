@@ -115,22 +115,6 @@
   .info {
     font-size: 1rem;
     font-size: 1rem;
-    & > ul {
-      font-weight: 500;
-      font-size: 0.9rem;
-      color: #2e3036;
-      list-style: disc;
-      margin-bottom: 1rem;
-      @media (min-width: $tablet-size-port) {
-        font-size: 1rem;
-      }
-      padding-inline-start: 1rem;
-      & > li {
-        &:not(:last-child) {
-          margin-bottom: 0.5rem;
-        }
-      }
-    }
   }
   .text {
     font-size: 0.9rem;
@@ -203,9 +187,9 @@
   }
 
   .banners {
-    margin: 2rem 0 1rem 0;
+    margin: 2rem 0;
     @media (min-width: $tablet-size-port) {
-      margin: 4rem 0 2rem 0;
+      margin: 4rem 0;
     }
     &__flex {
       display: flex;
